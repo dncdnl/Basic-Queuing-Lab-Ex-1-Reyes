@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BasicQueuing
 {
-    public partial class QueuingForm : Form
+    public partial class CashierWindowQueueForm : Form
     {
-        public QueuingForm()
+        public CashierWindowQueueForm()
         {
             InitializeComponent();
         }
