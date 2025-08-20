@@ -16,5 +16,11 @@ namespace BasicQueuing
         {
             InitializeComponent();
         }
+
+        private void btnCashier_Click(object sender, EventArgs e)
+        {
+            // calling and declaring the cashier class
+            CashierClass cashier = new CashierClass();
+        }
     }
 }
