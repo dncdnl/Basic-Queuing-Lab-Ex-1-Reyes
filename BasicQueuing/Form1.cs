@@ -14,6 +14,7 @@ namespace BasicQueuing
 
     public partial class QueuingForm : Form
     {
+        // declaringg the CashierClass 
         private CashierClass cashier;
         public QueuingForm()
         {
@@ -24,8 +25,11 @@ namespace BasicQueuing
 
         private void btnCashier_Click(object sender, EventArgs e)
         {
-            
-            
+            // Generate a new cashier number and display it in the label
+            lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
+            CashierClass.getnumberInQueue = lblQueue.Text;
+            CashierClass.CashierQueue.Enqueue(CashierClass.getnumberInQueue);
+
         }
     }
 }
