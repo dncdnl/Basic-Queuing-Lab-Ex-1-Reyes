@@ -16,5 +16,11 @@ namespace BasicQueuing
         {
             InitializeComponent();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            // Clear the list box before displaying the queue
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
     }
 }
