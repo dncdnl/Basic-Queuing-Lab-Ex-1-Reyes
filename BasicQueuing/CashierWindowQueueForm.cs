@@ -43,5 +43,14 @@ namespace BasicQueuing
             // Clear the list box before displaying the queue
             DisplayCashierQueue(CashierClass.CashierQueue);
         }
+
+        // adding timer in the CashierWindowQueueForm
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = (1*1000);
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
+        }
     }
 }

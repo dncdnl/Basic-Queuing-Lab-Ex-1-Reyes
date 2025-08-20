@@ -23,6 +23,7 @@ namespace BasicQueuing
             // Initializing the CashierClass
             cashier = new CashierClass();
             cashierWindow = new CashierWindowQueueForm();
+            cashierWindow.Show();
         }
 
         private void btnCashier_Click(object sender, EventArgs e)
