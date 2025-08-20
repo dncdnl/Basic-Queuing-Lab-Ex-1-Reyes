@@ -37,11 +37,11 @@ namespace BasicQueuing
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            // Clear the list box before displaying the queue
-            DisplayCashierQueue(CashierClass.CashierQueue);
-
             // Check if the queue is empty before dequeuing
             CashierClass.CashierQueue.Dequeue();
+
+            // Clear the list box before displaying the queue
+            DisplayCashierQueue(CashierClass.CashierQueue);
         }
     }
 }
