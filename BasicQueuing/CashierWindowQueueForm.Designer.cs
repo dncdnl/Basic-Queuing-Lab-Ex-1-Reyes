@@ -55,6 +55,7 @@
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next\r\n";
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // listCashierQueue
             // 
@@ -65,6 +66,7 @@
             this.listCashierQueue.Size = new System.Drawing.Size(218, 247);
             this.listCashierQueue.TabIndex = 2;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
+            this.listCashierQueue.View = System.Windows.Forms.View.List;
             // 
             // CashierWindowQueueForm
             // 
