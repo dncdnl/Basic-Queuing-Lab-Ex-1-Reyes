@@ -1,6 +1,6 @@
 ﻿namespace BasicQueuing
 {
-    partial class NowServing
+    partial class CustomerView
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblNowServing;
-        private System.Windows.Forms.Label lblQueueNumber;
+        public System.Windows.Forms.Label lblNowServing;
+        public System.Windows.Forms.Label lblQueueNumber;
     }
 }
