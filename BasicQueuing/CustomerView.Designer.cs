@@ -53,7 +53,7 @@
             this.lblQueueNumber.TabIndex = 1;
             this.lblQueueNumber.Text = "-";
             // 
-            // NowServing
+            // CustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -61,8 +61,8 @@
             this.ClientSize = new System.Drawing.Size(260, 132);
             this.Controls.Add(this.lblQueueNumber);
             this.Controls.Add(this.lblNowServing);
-            this.Name = "NowServing";
-            this.Text = "NowServing";
+            this.Name = "CustomerView";
+            this.Text = "CustomerView";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -44,16 +44,27 @@ namespace BasicQueuing
                 string nextCustomer = CashierClass.CashierQueue.Peek(); // This is used to check if it is empty
                 CashierClass.CashierQueue.Dequeue();
 
+                // Checking if the nextCustomer is null or empty
+                CustomerView customerView = null;
+
                 // Using the Foreach loop to display the next customer in the queue
-                foreach(Form form in Application.OpenForms)
+                foreach (Form form in Application.OpenForms)
                 {
-                    if(form is CustomerView customerView)
+                    if(form is CustomerView existingView)
                     {
                         // Update the label in the CustomerView form with the next customer
-                        customerView.lblQueueNumber.Text = nextCustomer;
+                        customerView = existingView;
                         break;
                     }
                 }
+                if (customerView == null)
+                {
+                    // If the CustomerView form is not open, create a new instance
+                    customerView = new CustomerView();
+                    customerView.Show();
+                }
+                // Update the label in the CustomerView form with the next customer
+                customerView.lblQueueNumber.Text = nextCustomer;
             }
             catch (InvalidOperationException)
             {
