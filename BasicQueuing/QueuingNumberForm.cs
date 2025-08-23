@@ -16,5 +16,11 @@ namespace BasicQueuing
         {
             InitializeComponent();
         }
+
+        private void QueuingNumberForm_Load(object sender, EventArgs e)
+        {
+            // Display the first number in the queue when the form loads
+            lblServingNumber.Text = CashierClass.CashierQueue.Peek();
+        }
     }
 }

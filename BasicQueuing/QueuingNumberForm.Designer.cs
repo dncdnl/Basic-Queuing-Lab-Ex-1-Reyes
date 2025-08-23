@@ -63,6 +63,7 @@
             this.Controls.Add(this.lblNowServing);
             this.Name = "QueuingNumberForm";
             this.Text = "QueuingNumberForm";
+            this.Load += new System.EventHandler(this.QueuingNumberForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
