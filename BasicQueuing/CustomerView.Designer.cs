@@ -45,9 +45,10 @@
             // lblQueueNumber
             // 
             this.lblQueueNumber.AutoSize = true;
-            this.lblQueueNumber.BackColor = System.Drawing.Color.Azure;
+            this.lblQueueNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblQueueNumber.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueueNumber.Location = new System.Drawing.Point(114, 50);
+            this.lblQueueNumber.ForeColor = System.Drawing.Color.Azure;
+            this.lblQueueNumber.Location = new System.Drawing.Point(51, 50);
             this.lblQueueNumber.Name = "lblQueueNumber";
             this.lblQueueNumber.Size = new System.Drawing.Size(28, 37);
             this.lblQueueNumber.TabIndex = 1;
