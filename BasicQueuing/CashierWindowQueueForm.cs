@@ -37,12 +37,29 @@ namespace BasicQueuing
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            // Check if the queue is empty before dequeuing
-            CashierClass.CashierQueue.Dequeue();
+            CustomerView customerView = new CustomerView();
+            foreach (Form form in allForms)
+            {
+                if (form.Name == "CustomerView")
+                {
+                    openedForm = form;
+                    openform = true;
+                }
+            }
+            if (openform == true)
+            {
+                if (passControl != null)
+                    customerView.lblCustomer.Text = CashierClass.CashierQueue.Peek();
+                CashierClass.CashierQueue.Dequeue();
+                passControl(customerView.lblCustomer);
+            }
+            else
+            {
+                customerView.ShowDialog();
+                customerView.lblCustomer.Text = CashierClass.CashierQueue.Peek();
+                CashierClass.CashierQueue.Dequeue();
 
-            // Clear the list box before displaying the queue
-            DisplayCashierQueue(CashierClass.CashierQueue);
-        }
+            }
 
         // adding timer in the CashierWindowQueueForm
         private void timer1_Tick(object sender, EventArgs e)

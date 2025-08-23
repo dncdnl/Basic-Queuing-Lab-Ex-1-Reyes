@@ -1,6 +1,6 @@
 ﻿namespace BasicQueuing
 {
-    partial class QueuingNumberForm
+    partial class NowServing
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,40 @@
         private void InitializeComponent()
         {
             this.lblNowServing = new System.Windows.Forms.Label();
-            this.lblServingNumber = new System.Windows.Forms.Label();
+            this.lblQueueNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNowServing
             // 
             this.lblNowServing.AutoSize = true;
-            this.lblNowServing.BackColor = System.Drawing.Color.Transparent;
-            this.lblNowServing.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNowServing.Location = new System.Drawing.Point(43, 9);
+            this.lblNowServing.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNowServing.Location = new System.Drawing.Point(41, 9);
             this.lblNowServing.Name = "lblNowServing";
-            this.lblNowServing.Size = new System.Drawing.Size(165, 24);
+            this.lblNowServing.Size = new System.Drawing.Size(174, 31);
             this.lblNowServing.TabIndex = 0;
             this.lblNowServing.Text = "NOW SERVING";
             // 
-            // lblServingNumber
+            // lblQueueNumber
             // 
-            this.lblServingNumber.AutoSize = true;
-            this.lblServingNumber.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServingNumber.Location = new System.Drawing.Point(116, 42);
-            this.lblServingNumber.Name = "lblServingNumber";
-            this.lblServingNumber.Size = new System.Drawing.Size(25, 34);
-            this.lblServingNumber.TabIndex = 1;
-            this.lblServingNumber.Text = "-";
+            this.lblQueueNumber.AutoSize = true;
+            this.lblQueueNumber.BackColor = System.Drawing.Color.Azure;
+            this.lblQueueNumber.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueueNumber.Location = new System.Drawing.Point(114, 50);
+            this.lblQueueNumber.Name = "lblQueueNumber";
+            this.lblQueueNumber.Size = new System.Drawing.Size(28, 37);
+            this.lblQueueNumber.TabIndex = 1;
+            this.lblQueueNumber.Text = "-";
             // 
-            // QueuingNumberForm
+            // NowServing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(250, 122);
-            this.Controls.Add(this.lblServingNumber);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(260, 132);
+            this.Controls.Add(this.lblQueueNumber);
             this.Controls.Add(this.lblNowServing);
-            this.Name = "QueuingNumberForm";
-            this.Text = "QueuingNumberForm";
-            this.Load += new System.EventHandler(this.QueuingNumberForm_Load);
+            this.Name = "NowServing";
+            this.Text = "NowServing";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,6 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblNowServing;
-        private System.Windows.Forms.Label lblServingNumber;
+        private System.Windows.Forms.Label lblQueueNumber;
     }
 }
