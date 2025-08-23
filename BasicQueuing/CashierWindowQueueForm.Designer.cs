@@ -62,6 +62,7 @@
             // listCashierQueue
             // 
             this.listCashierQueue.BackColor = System.Drawing.Color.Azure;
+            this.listCashierQueue.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCashierQueue.HideSelection = false;
             this.listCashierQueue.Location = new System.Drawing.Point(154, 26);
             this.listCashierQueue.Name = "listCashierQueue";

@@ -49,10 +49,10 @@
             // 
             this.lblQueue.AutoSize = true;
             this.lblQueue.BackColor = System.Drawing.Color.Transparent;
-            this.lblQueue.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueue.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueue.Location = new System.Drawing.Point(175, 72);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(13, 20);
+            this.lblQueue.Size = new System.Drawing.Size(20, 29);
             this.lblQueue.TabIndex = 1;
             this.lblQueue.Text = "-";
             // 
